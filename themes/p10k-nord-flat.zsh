@@ -135,8 +135,8 @@ typeset -g POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
   fi
 
   # ───────────────────── Konteks user@host ──────────────────────────
-  # Muncul hanya saat root atau saat via SSH — di mesin lokal biasa
-  # informasi ini cuma noise, jadi disembunyikan secara default.
+  # Selalu tampil agar identitas user dan host mudah dikenali, baik pada
+  # terminal lokal, sesi SSH, saat memakai sudo, maupun sebagai root.
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=$P10K_NORD_RED
   typeset -g POWERLEVEL9K_CONTEXT_ROOT_VISUAL_IDENTIFIER_EXPANSION='󰀄 '
   typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=$P10K_NORD_ORANGE
@@ -144,7 +144,6 @@ typeset -g POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
   typeset -g POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND=$P10K_NORD_ORANGE
   typeset -g POWERLEVEL9K_CONTEXT_REMOTE_VISUAL_IDENTIFIER_EXPANSION='󰢹 '
   typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
-  typeset -g POWERLEVEL9K_CONTEXT_{DEFAULT,SUDO}_{CONTENT,VISUAL_IDENTIFIER}_EXPANSION=
 
   # ─────────────────────────── Direktori ────────────────────────────
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=$P10K_NORD_FROST
