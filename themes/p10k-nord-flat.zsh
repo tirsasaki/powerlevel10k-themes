@@ -5,8 +5,8 @@
 #
 # Tema ini memerlukan Nerd Font (v3+) agar semua ikon tampil dengan benar.
 # Versi ini adalah redesign dari "Nord Flat": setiap segmen sekarang punya
-# ikon visual identifier, lebih banyak konteks ditampilkan (user@host, RAM,
-# baterai, Kubernetes, dsb.), dan palet Aurora Nord dipakai secara penuh
+# ikon visual identifier, lebih banyak informasi ditampilkan (RAM, baterai,
+# Kubernetes, dsb.), dan palet Aurora Nord dipakai secara penuh
 # supaya setiap jenis informasi punya warna khasnya sendiri.
 
 typeset -g POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
@@ -38,18 +38,17 @@ typeset -g POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
   typeset -g P10K_NORD_SNOW='#ECEFF4'     # putih salju — teks terang
   typeset -g P10K_NORD_SNOW_2='#E5E9F0'   # putih redup
   typeset -g P10K_NORD_RED='#BF616A'      # error / konflik / low battery
-  typeset -g P10K_NORD_ORANGE='#D08770'   # peringatan sedang / host
+  typeset -g P10K_NORD_ORANGE='#D08770'   # peringatan sedang / toolchain
   typeset -g P10K_NORD_YELLOW='#EBCB8B'   # perubahan / lambat / charging
   typeset -g P10K_NORD_GREEN='#A3BE8C'    # sukses / bersih / ok
   typeset -g P10K_NORD_PURPLE='#B48EAD'   # kontainer / orkestrasi / cloud
 
   # ───────────────────────── Tata letak prompt ──────────────────────
-  # Baris 1: OS, user@host (jika relevan), direktori, Git, semua tool
+  # Baris 1: OS, direktori, Git, semua tool
   # dan environment aktif, plus konteks container/orkestrasi.
   # Baris 2: simbol prompt dan tempat mengetik command.
   typeset -g POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(
     os_icon
-    context
     dir
     vcs
     node_version
@@ -133,17 +132,6 @@ typeset -g POWERLEVEL9K_DISABLE_CONFIGURATION_WIZARD=true
         ;;
     esac
   fi
-
-  # ───────────────────── Konteks user@host ──────────────────────────
-  # Selalu tampil agar identitas user dan host mudah dikenali, baik pada
-  # terminal lokal, sesi SSH, saat memakai sudo, maupun sebagai root.
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_FOREGROUND=$P10K_NORD_RED
-  typeset -g POWERLEVEL9K_CONTEXT_ROOT_VISUAL_IDENTIFIER_EXPANSION='󰀄 '
-  typeset -g POWERLEVEL9K_CONTEXT_FOREGROUND=$P10K_NORD_ORANGE
-  typeset -g POWERLEVEL9K_CONTEXT_VISUAL_IDENTIFIER_EXPANSION='󰀄 '
-  typeset -g POWERLEVEL9K_CONTEXT_REMOTE_FOREGROUND=$P10K_NORD_ORANGE
-  typeset -g POWERLEVEL9K_CONTEXT_REMOTE_VISUAL_IDENTIFIER_EXPANSION='󰢹 '
-  typeset -g POWERLEVEL9K_CONTEXT_TEMPLATE='%n@%m'
 
   # ─────────────────────────── Direktori ────────────────────────────
   typeset -g POWERLEVEL9K_DIR_FOREGROUND=$P10K_NORD_FROST
