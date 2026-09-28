@@ -1,5 +1,8 @@
 # Powerlevel10k Themes
 
+> [!IMPORTANT]
+> **Development status:** This repository is actively under development. Themes, installer behavior, and documentation may change as the project evolves.
+
 Custom Powerlevel10k themes for Zsh, designed for modern terminals with Nerd Fonts.
 
 ## Quick start
