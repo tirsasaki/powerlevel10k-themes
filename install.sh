@@ -10,7 +10,8 @@ ZSH_CONFIG="${P10K_ZSH_CONFIG:-$HOME/.zshrc}"
 
 THEMES="lunar-prism
 matrix-console
-nord-flat"
+nord-flat
+sakura-blossom"
 
 usage() {
     cat <<EOF
