@@ -46,3 +46,4 @@ To install manually, copy a theme to `~/.p10k.zsh` and reload it:
 cp themes/p10k-lunar-prism.zsh ~/.p10k.zsh
 source ~/.p10k.zsh
 ```
+...
