@@ -10,6 +10,7 @@ ZSH_CONFIG="${P10K_ZSH_CONFIG:-$HOME/.zshrc}"
 
 THEMES="lunar-prism
 matrix-console
+momiji-autumn
 nord-flat
 sakura-blossom"
 
