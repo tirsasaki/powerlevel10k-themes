@@ -16,10 +16,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/tirsasaki/powerlevel10k-th
 Use `↑`/`↓` or `j`/`k` to move, press `Enter` to install, or press `q` to quit.
 Lunar Eclipse is selected by default.
 
-## Themes
-
-- `p10k-matrix-console.zsh` — three-level green/teal dashboard with system monitoring.
-
 All themes support detailed Git status, active development tools, Docker context,
 right-side command status, instant prompt, transient prompt, and a CachyOS/Arch fallback.
 
