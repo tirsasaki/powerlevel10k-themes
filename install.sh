@@ -8,7 +8,9 @@ BASE_URL="${P10K_THEMES_BASE_URL:-https://raw.githubusercontent.com/${REPOSITORY
 CONFIG_FILE="${P10K_CONFIG_FILE:-$HOME/.p10k.zsh}"
 ZSH_CONFIG="${P10K_ZSH_CONFIG:-$HOME/.zshrc}"
 
-THEMES="lunar-eclipse
+THEMES="jungle-canopy-dense
+jungle-canopy-pure
+lunar-eclipse
 matrix-console
 momiji-autumn
 sakura-blossom"
