@@ -9,7 +9,6 @@ CONFIG_FILE="${P10K_CONFIG_FILE:-$HOME/.p10k.zsh}"
 ZSH_CONFIG="${P10K_ZSH_CONFIG:-$HOME/.zshrc}"
 
 THEMES="lunar-eclipse
-lunar-prism
 matrix-console
 momiji-autumn
 nord-flat

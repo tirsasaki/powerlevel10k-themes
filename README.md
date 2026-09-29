@@ -18,7 +18,6 @@ Nord Icons is selected by default.
 
 ## Themes
 
-- `p10k-lunar-prism.zsh` — transparent ice-blue and lilac theme with rich development icons.
 - `p10k-matrix-console.zsh` — three-level green/teal dashboard with system monitoring.
 - `p10k-nord-flat.zsh` — icon-rich Nord theme with a modern two-line layout, system metrics, and explicit Arch/CachyOS logo support.
 
@@ -30,7 +29,7 @@ right-side command status, instant prompt, transient prompt, and a CachyOS/Arch 
 Install a specific theme without opening the menu:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/tirsasaki/powerlevel10k-themes/main/install.sh | sh -s -- lunar-prism
+curl -fsSL https://raw.githubusercontent.com/tirsasaki/powerlevel10k-themes/main/install.sh | sh -s -- lunar-eclipse
 ```
 
 List the available theme names:
@@ -46,7 +45,7 @@ adding duplicate initialization lines.
 To install manually, copy a theme to `~/.p10k.zsh` and reload it:
 
 ```zsh
-cp themes/p10k-lunar-prism.zsh ~/.p10k.zsh
+cp themes/p10k-lunar-eclipse.zsh ~/.p10k.zsh
 source ~/.p10k.zsh
 ```
 ...
