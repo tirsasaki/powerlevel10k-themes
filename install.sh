@@ -12,6 +12,7 @@ THEMES="jungle-canopy-dense
 jungle-canopy-pure
 lunar-eclipse
 matrix-console
+midnight-surf
 momiji-autumn
 sakura-blossom"
 
