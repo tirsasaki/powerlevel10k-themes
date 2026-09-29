@@ -3,7 +3,7 @@
 set -eu
 
 REPOSITORY="tirsasaki/powerlevel10k-themes"
-DEFAULT_THEME="nord-flat"
+DEFAULT_THEME="lunar-eclipse"
 BASE_URL="${P10K_THEMES_BASE_URL:-https://raw.githubusercontent.com/${REPOSITORY}/main}"
 CONFIG_FILE="${P10K_CONFIG_FILE:-$HOME/.p10k.zsh}"
 ZSH_CONFIG="${P10K_ZSH_CONFIG:-$HOME/.zshrc}"
@@ -11,7 +11,6 @@ ZSH_CONFIG="${P10K_ZSH_CONFIG:-$HOME/.zshrc}"
 THEMES="lunar-eclipse
 matrix-console
 momiji-autumn
-nord-flat
 sakura-blossom"
 
 usage() {
